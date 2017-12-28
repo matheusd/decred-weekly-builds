@@ -4,7 +4,11 @@ go:
   - 1.9.x
 
 before_install:
+  - go get -u github.com/golang/dep/cmd/dep
+  - git clone https://github.com/decred/dcrd $GOPATH/src/github.com/decred/dcrd
+  - git clone https://github.com/decred/dcrwallet $GOPATH/src/github.com/decred/dcrwallet
   - python3 before_install.py
+  
   # - go get -v github.com/decred/dcrd
   # - go get -v github.com/decred/dcrwallet
   # # - go get -v github.com/decred/decrediton
