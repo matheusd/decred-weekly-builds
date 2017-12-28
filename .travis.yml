@@ -11,6 +11,8 @@ before_install:
   - python3 before_install.py
   - (cd $GOPATH/src/github.com/decred/dcrd && dep ensure -v && go build -v . cmd/... && echo $PWD && ls)
   - (cd $GOPATH/src/github.com/decred/dcrwallet && dep ensure && go build -v . cmd/... && ls)
+  - ls
+  - ls $GOPATH/bin
   # - (cd $GOPATH/src/github.com/decred/decrediton && yarn && yarn package && ls release)
 
 
