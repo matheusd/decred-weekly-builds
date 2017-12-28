@@ -8,8 +8,8 @@ before_install:
   - git clone https://github.com/decred/dcrd $GOPATH/src/github.com/decred/dcrd
   - git clone https://github.com/decred/dcrwallet $GOPATH/src/github.com/decred/dcrwallet
   - python3 before_install.py
-  - cd $GOPATH/src/github.com/decred/dcrd && dep ensure && go build . cmd/...
-  - cd $GOPATH/src/github.com/decred/dcrwallet && dep ensure && go build . cmd/...
+  - (cd $GOPATH/src/github.com/decred/dcrd && dep ensure && go build . cmd/...)
+  - (cd $GOPATH/src/github.com/decred/dcrwallet && dep ensure && go build . cmd/...)
 
 
   # - go get -v github.com/decred/dcrd
