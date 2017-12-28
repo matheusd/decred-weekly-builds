@@ -4,11 +4,12 @@ go:
   - 1.9.x
 
 before_install:
-  - go get -v github.com/decred/dcrd
-  - go get -v github.com/decred/dcrwallet
-  # - go get -v github.com/decred/decrediton
-  - cd $GOPATH/src/github.com/decred/dcrd && dep ensure && go install . cmd/...
-  - cd $GOPATH/src/github.com/decred/dcrwallet && dep ensure && go install . cmd/...
+  - python before_install.py
+  # - go get -v github.com/decred/dcrd
+  # - go get -v github.com/decred/dcrwallet
+  # # - go get -v github.com/decred/decrediton
+  # - cd $GOPATH/src/github.com/decred/dcrd && dep ensure && go install . cmd/...
+  # - cd $GOPATH/src/github.com/decred/dcrwallet && dep ensure && go install . cmd/...
 
 script:
   - ./run_tests.sh $GOVERSION
