@@ -12,6 +12,7 @@ def main():
     with open("versions.json") as f:
         versions = json.load(f)
 
+    print(os.environ)
     os.makedirs("{GOPATH}/src/github.com/decred/dcrd".format(os.environ))
     system("git clone https://github.com/decred/dcrd {GOPATH}/src/github.com/decred/dcrd")
     system("git clone https://github.com/decred/dcrwallet {GOPATH}/src/github.com/decred/dcrwallet")
