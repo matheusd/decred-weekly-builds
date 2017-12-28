@@ -14,10 +14,6 @@ before_install:
   - go build -v github.com/decred/dcrd
   - ls
   - ls $GOPATH/bin
-
-   && go build -v . cmd/... && echo $PWD && ls)
-  - ls
-  - ls $GOPATH/bin
   # - (cd $GOPATH/src/github.com/decred/decrediton && yarn && yarn package && ls release)
 
 
