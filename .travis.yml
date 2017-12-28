@@ -1,0 +1,13 @@
+language: go
+
+go:
+  - 1.9.x
+
+before_install:
+  - go get -v github.com/decred/dcrd
+  # - go get -v github.com/decred/dcrwallet
+  # - go get -v github.com/decred/decrediton
+  - cd github.com/decred/dcrd && dep ensure && go install . cmd/...
+
+script:
+  - ./run_tests.sh $GOVERSION
