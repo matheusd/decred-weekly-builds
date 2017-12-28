@@ -18,6 +18,9 @@ def main():
     print("Checking out dcrwallet " + versions["shaDcrwallet"])
     system("cd %(GOPATH)s/src/github.com/decred/dcrwallet && git checkout " + versions["shaDcrwallet"])
 
+    print("Checking out decrediton " + versions["shaDecrediton"])
+    system("cd %(GOPATH)s/src/github.com/decred/decrediton && git checkout " + versions["shaDecrediton"])
+
     # system("cd %(GOPATH)s/src/github.com/decred/dcrd && dep ensure && go build")
     # system("cd %(GOPATH)s/src/github.com/decred/dcrwallet && dep ensure && go build")
 
