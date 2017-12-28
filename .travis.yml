@@ -4,7 +4,7 @@ go:
   - 1.9.x
 
 before_install:
-  - python before_install.py
+  - python3 before_install.py
   # - go get -v github.com/decred/dcrd
   # - go get -v github.com/decred/dcrwallet
   # # - go get -v github.com/decred/decrediton
