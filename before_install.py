@@ -12,8 +12,14 @@ def main():
     with open("versions.json") as f:
         versions = json.load(f)
 
-    system("cd %(GOPATH)s/src/github.com/decred/dcrd && dep ensure && go build")
-    system("cd %(GOPATH)s/src/github.com/decred/dcrwallet && dep ensure && go build")
+    print("Checking out dcrd " + versions["shaDcrd"])
+    system("cd %(GOPATH)s/src/github.com/decred/dcrd && git checkout " + versions["shaDcrd"])
+
+    print("Checking out dcrwallet " + versions["shaDcrwallet"])
+    system("cd %(GOPATH)s/src/github.com/decred/dcrd && git checkout " + versions["shaDcrwallet"])
+
+    # system("cd %(GOPATH)s/src/github.com/decred/dcrd && dep ensure && go build")
+    # system("cd %(GOPATH)s/src/github.com/decred/dcrwallet && dep ensure && go build")
 
 
 if __name__ == "__main__":
