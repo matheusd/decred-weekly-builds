@@ -8,6 +8,12 @@ go:
 #     packages:
 #       - wine
 
+deploy:
+  provider: releases
+  api_key: "$GITHUB OAUTH TOKEN"
+  file: *.tar.gz
+  skip_cleanup: true
+
 before_install:
   - go get -u github.com/golang/dep/cmd/dep
   - git clone https://github.com/$GITHUB_DECRED_OWNER/dcrd $GOPATH/src/github.com/decred/dcrd
@@ -23,6 +29,7 @@ before_install:
   - (cd $GOPATH/src/github.com/decred/decrediton/bin && go build -v github.com/decred/dcrwallet)
   - (cd $GOPATH/src/github.com/decred/decrediton && yarn && yarn package-dev-linux)
   - ls $GOPATH/src/github.com/decred/decrediton/release
+  - cp $GOPATH/src/github.com/decred/decrediton/release/*.tar.gz $TRAVIS_BUILD_DIR
 
 
   # - go get -v github.com/decred/dcrd
