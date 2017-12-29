@@ -23,7 +23,7 @@ def main():
 
     print("Fixing decrediton version")
     decreditonPath = "%(GOPATH)s/src/github.com/decred/decrediton" % os.environ
-    with open(decreditonPath + "/package.json") as f:
+    with open(decreditonPath + "/package.json", "rw") as f:
         packagejson = json.load(f)
         packagejson["version"] = packagejson["version"] + "-dev" + versions["version"]
         f.truncate()
