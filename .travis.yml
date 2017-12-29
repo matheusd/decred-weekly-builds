@@ -30,7 +30,7 @@ before_install:
   - (cd $GOPATH/src/github.com/decred/decrediton/bin && go build -v github.com/decred/dcrd)
   - (cd $GOPATH/src/github.com/decred/decrediton/bin && go build -v github.com/decred/dcrd/cmd/dcrctl)
   - (cd $GOPATH/src/github.com/decred/decrediton/bin && go build -v github.com/decred/dcrwallet)
-  - (cd $GOPATH/src/github.com/decred/decrediton && yarn && yarn package-dev)
+  - (cd $GOPATH/src/github.com/decred/decrediton && yarn && yarn package-dev-all)
   - cp $GOPATH/src/github.com/decred/decrediton/release/*.* $TRAVIS_BUILD_DIR
   - (cd $TRAVIS_BUILD_DIR && echo $PWD && ls)
 
