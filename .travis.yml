@@ -5,9 +5,9 @@ go:
 
 before_install:
   - go get -u github.com/golang/dep/cmd/dep
-  - git clone https://github.com/decred/dcrd $GOPATH/src/github.com/decred/dcrd
-  - git clone https://github.com/decred/dcrwallet $GOPATH/src/github.com/decred/dcrwallet
-  - git clone https://github.com/decred/decrediton $GOPATH/src/github.com/decred/decrediton
+  - git clone https://github.com/$GITHUB_DECRED_OWNER/dcrd $GOPATH/src/github.com/decred/dcrd
+  - git clone https://github.com/$GITHUB_DECRED_OWNER/dcrwallet $GOPATH/src/github.com/decred/dcrwallet
+  - git clone https://github.com/$GITHUB_DECRED_OWNER/decrediton $GOPATH/src/github.com/decred/decrediton
   - python3 before_install.py
   - (cd $GOPATH/src/github.com/decred/dcrd && dep ensure -v)
   - (cd $GOPATH/src/github.com/decred/dcrwallet && dep ensure -v)
@@ -17,7 +17,7 @@ before_install:
   - (cd $GOPATH/src/github.com/decred/decrediton/bin && go build -v github.com/decred/dcrwallet)
   - ls
   - ls $GOPATH/src/github.com/decred/decrediton/bin
-  - (cd $GOPATH/src/github.com/decred/decrediton && yarn && yarn package && ls release)
+  - (cd $GOPATH/src/github.com/decred/decrediton && yarn && yarn package-dev && ls release)
 
 
   # - go get -v github.com/decred/dcrd
