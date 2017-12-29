@@ -23,11 +23,11 @@ def main():
 
     print("Fixing decrediton version")
     decreditonPath = "%(GOPATH)s/src/github.com/decred/decrediton" % os.environ
-    with open(decreditonPath + "/package.json", "rb") as f:
+    with open(decreditonPath + "/package.json", "r") as f:
         packagejson = json.load(f)
         packagejson["version"] = packagejson["version"] + "-dev" + versions["version"]
 
-    with open(decreditonPath + "/package.json", "wb") as f:
+    with open(decreditonPath + "/package.json", "w") as f:
         json.dump(packagejson, f, indent=2)
 
 if __name__ == "__main__":
