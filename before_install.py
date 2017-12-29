@@ -21,9 +21,13 @@ def main():
     print("Checking out decrediton " + versions["shaDecrediton"])
     system("cd %(GOPATH)s/src/github.com/decred/decrediton && git checkout " + versions["shaDecrediton"])
 
-    # system("cd %(GOPATH)s/src/github.com/decred/dcrd && dep ensure && go build")
-    # system("cd %(GOPATH)s/src/github.com/decred/dcrwallet && dep ensure && go build")
-
+    print("Fixing decrediton version")
+    decreditonPath = "%(GOPATH)s/src/github.com/decred/decrediton" % os.environ
+    with open(decreditonPath + "/package.json") as f:
+        packagejson = json.load(f)
+        packagejson["version"] = packagejson["version"] + "-dev" + versions["version"]
+        f.truncate()
+        json.dump(packagejson, f, indent=2)
 
 if __name__ == "__main__":
     main()

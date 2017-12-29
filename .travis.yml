@@ -3,10 +3,10 @@ language: go
 go:
   - 1.9.x
 
-addons:
-  apt:
-    packages:
-      - wine
+# addons:
+#   apt:
+#     packages:
+#       - wine
 
 before_install:
   - go get -u github.com/golang/dep/cmd/dep
@@ -14,15 +14,15 @@ before_install:
   - git clone https://github.com/$GITHUB_DECRED_OWNER/dcrwallet $GOPATH/src/github.com/decred/dcrwallet
   - git clone https://github.com/$GITHUB_DECRED_OWNER/decrediton $GOPATH/src/github.com/decred/decrediton
   - python3 before_install.py
+  - cat $GOPATH/src/github.com/decred/decrediton/package.json
   - (cd $GOPATH/src/github.com/decred/dcrd && dep ensure -v)
   - (cd $GOPATH/src/github.com/decred/dcrwallet && dep ensure -v)
   - mkdir $GOPATH/src/github.com/decred/decrediton/bin
   - (cd $GOPATH/src/github.com/decred/decrediton/bin && go build -v github.com/decred/dcrd)
   - (cd $GOPATH/src/github.com/decred/decrediton/bin && go build -v github.com/decred/dcrd/cmd/dcrctl)
   - (cd $GOPATH/src/github.com/decred/decrediton/bin && go build -v github.com/decred/dcrwallet)
-  - ls
-  - ls $GOPATH/src/github.com/decred/decrediton/bin
-  - (cd $GOPATH/src/github.com/decred/decrediton && yarn && yarn package-dev-linux && ls release)
+  # - (cd $GOPATH/src/github.com/decred/decrediton && yarn && yarn package-dev-linux)
+  - ls $GOPATH/src/github.com/decred/decrediton/release
 
 
   # - go get -v github.com/decred/dcrd
