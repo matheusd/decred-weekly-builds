@@ -5,11 +5,6 @@ language: go
 go:
   - 1.9.x
 
-# addons:
-#   apt:
-#     packages:
-#       - wine
-
 deploy:
   provider: releases
   api_key: $GITHUB_OAUTH_TOKEN
@@ -24,7 +19,8 @@ before_install:
   - git clone https://github.com/$GITHUB_DECRED_OWNER/dcrd $GOPATH/src/github.com/decred/dcrd
   - git clone https://github.com/$GITHUB_DECRED_OWNER/dcrwallet $GOPATH/src/github.com/decred/dcrwallet
   - git clone https://github.com/$GITHUB_DECRED_OWNER/decrediton $GOPATH/src/github.com/decred/decrediton
-  - python3 before_install.py
+  # - python3 before_install.py # linux
+  - python before_install.py
   - cat $GOPATH/src/github.com/decred/decrediton/package.json
   - (cd $GOPATH/src/github.com/decred/dcrd && dep ensure -v)
   - (cd $GOPATH/src/github.com/decred/dcrwallet && dep ensure -v)
