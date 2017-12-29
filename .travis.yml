@@ -3,6 +3,11 @@ language: go
 go:
   - 1.9.x
 
+addons:
+  apt:
+    packages:
+      - wine
+
 before_install:
   - go get -u github.com/golang/dep/cmd/dep
   - git clone https://github.com/$GITHUB_DECRED_OWNER/dcrd $GOPATH/src/github.com/decred/dcrd
