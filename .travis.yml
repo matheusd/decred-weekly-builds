@@ -11,8 +11,11 @@ go:
 deploy:
   provider: releases
   api_key: $GITHUB_OAUTH_TOKEN
-  file: "*.tar.gz"
+  file_glob: true
+  file: "./*.tar.gz"
   skip_cleanup: true
+  on:
+    tags: true
 
 before_install:
   - go get -u github.com/golang/dep/cmd/dep
@@ -28,8 +31,8 @@ before_install:
   - (cd $GOPATH/src/github.com/decred/decrediton/bin && go build -v github.com/decred/dcrd/cmd/dcrctl)
   - (cd $GOPATH/src/github.com/decred/decrediton/bin && go build -v github.com/decred/dcrwallet)
   - (cd $GOPATH/src/github.com/decred/decrediton && yarn && yarn package-dev-linux)
-  - ls $GOPATH/src/github.com/decred/decrediton/release
   - cp $GOPATH/src/github.com/decred/decrediton/release/*.tar.gz $TRAVIS_BUILD_DIR
+  - (cd $TRAVIS_BUILD_DIR && echo $PWD && ls)
 
 
   # - go get -v github.com/decred/dcrd
