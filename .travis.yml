@@ -17,7 +17,7 @@ before_install:
   - (cd $GOPATH/src/github.com/decred/decrediton/bin && go build -v github.com/decred/dcrwallet)
   - ls
   - ls $GOPATH/src/github.com/decred/decrediton/bin
-  # - (cd $GOPATH/src/github.com/decred/decrediton && yarn && yarn package && ls release)
+  - (cd $GOPATH/src/github.com/decred/decrediton && yarn && yarn package && ls release)
 
 
   # - go get -v github.com/decred/dcrd
