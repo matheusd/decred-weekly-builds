@@ -36,8 +36,8 @@ before_install:
   - (cd $GOPATH/src/github.com/decred/decrediton/bin && go build -v github.com/decred/dcrd)
   - (cd $GOPATH/src/github.com/decred/decrediton/bin && go build -v github.com/decred/dcrd/cmd/dcrctl)
   - (cd $GOPATH/src/github.com/decred/decrediton/bin && go build -v github.com/decred/dcrwallet)
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then yarn && yarn package-dev-linux ; fi
-  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then yarn && yarn package ; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then (cd $GOPATH/src/github.com/decred/decrediton && yarn && yarn package-dev-linux) ; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then (cd $GOPATH/src/github.com/decred/decrediton && yarn && yarn package) ; fi
   - cp $GOPATH/src/github.com/decred/decrediton/release/*.* $TRAVIS_BUILD_DIR
   - (cd $TRAVIS_BUILD_DIR && echo $PWD && ls)
 

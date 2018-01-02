@@ -49,5 +49,5 @@ environment:
   GOROOT: C:\go
 
 artifacts:
-  - path: 'release\*.exe'
+  - path: '%GOPATH%\decrediton\release\*.exe'
     name: DecreditonRelease
