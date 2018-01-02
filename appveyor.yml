@@ -1,5 +1,10 @@
 version: 0.1.{build}
 
+- provider: Environment
+  name: production
+  on:
+    appveyor_repo_tag: true
+
 cache:
   - node_modules
   - app\node_modules
