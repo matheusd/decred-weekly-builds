@@ -37,7 +37,7 @@ install:
   - cp %GOPATH%\\bin\\dcrctl.exe bin/
   - cp %GOPATH%\\bin\\dcrwallet.exe bin/
   - yarn
-  - yarn package-win  
+  - yarn package-win
 
 build_script:
   - node --version
