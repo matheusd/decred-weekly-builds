@@ -23,18 +23,21 @@ install:
   - git clone https://github.com/%GITHUB_DECRED_OWNER%/dcrd %GOPATH%/src/github.com/decred/dcrd
   - git clone https://github.com/%GITHUB_DECRED_OWNER%/dcrwallet %GOPATH%/src/github.com/decred/dcrwallet
   - git clone https://github.com/%GITHUB_DECRED_OWNER%/decrediton %GOPATH%/src/github.com/decred/decrediton
+  - python before_install.py
   - cd %GOPATH%\\src\\github.com\\decred\\dcrd
   - dep ensure
   - go install . ./cmd/dcrctl/
   - cd ../dcrwallet
   - dep ensure
   - go install
-  - cd %APPVEYOR_BUILD_FOLDER%
+  - dir %GOPATH%\\bin
+  - cd ../decrediton
   - mkdir bin
   - cp %GOPATH%\\bin\\dcrd.exe bin/
   - cp %GOPATH%\\bin\\dcrctl.exe bin/
   - cp %GOPATH%\\bin\\dcrwallet.exe bin/
-  - npm install
+  - yarn
+  - yarn package-win  
 
 build_script:
   - node --version
