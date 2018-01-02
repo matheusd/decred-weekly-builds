@@ -37,12 +37,10 @@ install:
   - cp %GOPATH%\\bin\\dcrctl.exe bin/
   - cp %GOPATH%\\bin\\dcrwallet.exe bin/
   - yarn
-  - yarn package-win
+  - yarn package
 
 build_script:
-  - node --version
-  - npm --version
-  - npm run package-win
+  - echo "Hooray!"
 
 test: off
 
