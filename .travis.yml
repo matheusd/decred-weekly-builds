@@ -22,7 +22,7 @@ deploy:
 before_install:
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update       ; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install yarn wine ; fi
-  - wine dir c:\windows\system32
+  # - wine dir c:\windows\system32
   - go get -u github.com/golang/dep/cmd/dep
   - git clone https://github.com/$GITHUB_DECRED_OWNER/dcrd $GOPATH/src/github.com/decred/dcrd
   - git clone https://github.com/$GITHUB_DECRED_OWNER/dcrwallet $GOPATH/src/github.com/decred/dcrwallet
