@@ -1,9 +1,6 @@
 version: 0.1.{build}
 
-- provider: Environment
-  name: production
-  on:
-    appveyor_repo_tag: true
+skip_non_tags: true
 
 cache:
   - node_modules
