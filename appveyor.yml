@@ -40,7 +40,7 @@ install:
   - yarn package
   - dir %GOPATH%\\src\\github.com\\decred\\decrediton\\release\\
   - mkdir %APPVEYOR_BUILD_FOLDER%\\artifacts
-  - cp %GOPATH%\\src\\github.com\\decred\\decrediton\\release\\*.* %APPVEYOR_BUILD_FOLDER%\\artifacts
+  - copy %GOPATH%\src\github.com\decred\decrediton\release\*.exe %APPVEYOR_BUILD_FOLDER%\artifacts
 
 build_script:
   - echo "Hooray!"
