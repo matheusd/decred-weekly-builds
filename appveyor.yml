@@ -41,7 +41,7 @@ install:
   - dir %GOPATH%\\src\\github.com\\decred\\decrediton\\release\\
   - mkdir %APPVEYOR_BUILD_FOLDER%\\artifacts
   - copy %GOPATH%\src\github.com\decred\decrediton\release\*.exe %APPVEYOR_BUILD_FOLDER%\artifacts
-  - 7z a %APPVEYOR_BUILD_FOLDER%\artifacts\decrediton-win-%APPVEYOR_REPO_TAG_NAME%.zip %GOPATH%\\src\\github.com\\decred\\decrediton\\release\\win-unpacked\\*.*
+  - 7z a %APPVEYOR_BUILD_FOLDER%\artifacts\decrediton-win-%APPVEYOR_REPO_TAG_NAME%.zip %GOPATH%\\src\\github.com\\decred\\decrediton\\release\\win-unpacked\\*
 
 build_script:
   - echo "Hooray!"
