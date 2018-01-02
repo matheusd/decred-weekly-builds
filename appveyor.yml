@@ -14,7 +14,6 @@ init:
   - set PATH=%GOROOT%\bin;%GOPATH%\bin;%PATH%
 
 install:
-  - set
   - ps: Install-Product node 6 x64
   - git reset --hard HEAD
   - npm install npm -g
@@ -39,8 +38,9 @@ install:
   - cp %GOPATH%\\bin\\dcrwallet.exe bin/
   - yarn
   - yarn package
+  - dir %GOPATH%\\src\\github.com\\decred\\decrediton\\release\\
   - mkdir %APPVEYOR_BUILD_FOLDER%\\artifacts
-  - cp %GOPATH%\\src\\github\\decred\\decrediton\\release\\*.* %APPVEYOR_BUILD_FOLDER%\\artifacts
+  - cp %GOPATH%\\src\\github.com\\decred\\decrediton\\release\\*.* %APPVEYOR_BUILD_FOLDER%\\artifacts
 
 build_script:
   - echo "Hooray!"
