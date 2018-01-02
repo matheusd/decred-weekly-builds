@@ -14,6 +14,7 @@ init:
   - set PATH=%GOROOT%\bin;%GOPATH%\bin;%PATH%
 
 install:
+  - set
   - ps: Install-Product node 6 x64
   - git reset --hard HEAD
   - npm install npm -g
@@ -38,6 +39,7 @@ install:
   - cp %GOPATH%\\bin\\dcrwallet.exe bin/
   - yarn
   - yarn package
+  - mkdir
 
 build_script:
   - echo "Hooray!"
@@ -49,5 +51,16 @@ environment:
   GOROOT: C:\go
 
 artifacts:
-  - path: '%GOPATH%\decrediton\release\*.exe'
+  - path: '.\artifacts'
     name: DecreditonRelease
+
+deploy:
+  provider: GitHub
+  auth_token:
+    secure: '%GITHUB_OAUTH_TOKEN%'
+  artifact: '.\artifacts\*.exe'
+  draft: false
+  prerelease: false
+  on:
+    branch: master                 # release from master branch only
+    appveyor_repo_tag: true        # deploy on tag push only
