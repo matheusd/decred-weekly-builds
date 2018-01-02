@@ -57,8 +57,7 @@ artifacts:
 
 deploy:
   provider: GitHub
-  auth_token:
-    secure: '%GITHUB_OAUTH_TOKEN%'
+  auth_token: '%GITHUB_OAUTH_TOKEN%'
   artifact: '.\artifacts\*.exe'
   draft: false
   prerelease: false
