@@ -52,13 +52,14 @@ environment:
   GOROOT: C:\go
 
 artifacts:
-  - path: '.\artifacts'
+  - path: '.\artifacts\*.exe'
+    type: File
     name: DecreditonRelease
 
 deploy:
   provider: GitHub
   auth_token: '%GITHUB_OAUTH_TOKEN%'
-  artifact: '.\artifacts\*.exe'
+  artifact: DecreditonRelease
   draft: false
   prerelease: false
   on:
