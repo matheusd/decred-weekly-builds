@@ -43,7 +43,6 @@ before_install:
   - cp $GOPATH/src/github.com/decred/decrediton/release/*.* $TRAVIS_BUILD_DIR
   - (cd $TRAVIS_BUILD_DIR && echo $PWD && ls)
 
-
   # - go get -v github.com/decred/dcrd
   # - go get -v github.com/decred/dcrwallet
   # # - go get -v github.com/decred/decrediton
