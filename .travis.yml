@@ -7,11 +7,6 @@ language: go
 go:
   - 1.9.x
 
-addons:
-  apt:
-    packages:
-      - rpmbuild
-
 deploy:
   provider: releases
   api_key: $GITHUB_OAUTH_TOKEN
