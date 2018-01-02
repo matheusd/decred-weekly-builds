@@ -39,8 +39,8 @@ install:
   - cp %GOPATH%\\bin\\dcrwallet.exe bin/
   - yarn
   - yarn package
-  - mkdir %APPVEYOR_BUILD_FOLDER%/artifacts
-  - cp %GOPATH%/src/github/decred/decrediton/release/*.* %APPVEYOR_BUILD_FOLDER%/artifacts
+  - mkdir %APPVEYOR_BUILD_FOLDER%\\artifacts
+  - cp %GOPATH%\\src\\github\\decred\\decrediton\\release\\*.* %APPVEYOR_BUILD_FOLDER%\\artifacts
 
 build_script:
   - echo "Hooray!"
