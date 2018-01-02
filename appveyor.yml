@@ -64,9 +64,7 @@ artifacts:
 deploy:
   provider: GitHub
   auth_token: '%GITHUB_OAUTH_TOKEN%'
-  artifact:
-    - DecreditonRelease
-    - DecreditonUnpacked
+  artifact: DecreditonRelease,DecreditonUnpacked
   draft: false
   prerelease: false
   on:
