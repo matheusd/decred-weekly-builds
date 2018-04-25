@@ -3,8 +3,8 @@
   "BUILD_REPO_REPO": "decred-weekly-builds",
   "DECRED_REPO_OWNER": "decred",
   "shaDcrd": "fd99f572cfd52ca722ad501ccb34acdcb22b4a67",
-  "shaDcrwallet": "cb49dff51455b837f0dd89b7edefec75b586eb5a",
-  "shaDecrediton": "62475ca9c60d7f6e36e54ba79f6e911aec2e44ad",
-  "tagName": "v20180418124621",
-  "version": "20180418124621"
+  "shaDcrwallet": "695a8859cd0d1edcecb5329a2588b370b422f144",
+  "shaDecrediton": "cb6e6153ba9681d873fe7bd7763e555e161d1e0a",
+  "tagName": "v20180425124548",
+  "version": "20180425124548"
 }
