@@ -11,9 +11,9 @@ code. Do not use in production. You will not receive support for them.
 ## Version Information
 
 <pre>
-version id = <a href="https://github.com/matheusd/decred-weekly-builds/releases/tag/v20180509125058">20180509125058</a>
-      dcrd = <a href="https://github.com/decred/dcrd/commits/63f2913e08fb776ca1fe5ccf5bd10d4a7ef3b87a">63f2913e08fb776ca1fe5ccf5bd10d4a7ef3b87a</a>
- dcrwallet = <a href="https://github.com/decred/dcrwallet/commits/8d4fed255314084668f9fab36efc72e5c77652a3">8d4fed255314084668f9fab36efc72e5c77652a3</a>
-decrediton = <a href="https://github.com/decred/decrediton/commits/d9460b2e80f79e0b5d456d4986e45fe62efde8c4">d9460b2e80f79e0b5d456d4986e45fe62efde8c4</a>
+version id = <a href="https://github.com/matheusd/decred-weekly-builds/releases/tag/v20180514165803">20180514165803</a>
+      dcrd = <a href="https://github.com/decred/dcrd/commits/6adfdf6bdcd1596e985c288768b9bb6ad8d0b281">6adfdf6bdcd1596e985c288768b9bb6ad8d0b281</a>
+ dcrwallet = <a href="https://github.com/decred/dcrwallet/commits/444747e14509570eb51c8ea02eb3380c117c1b48">444747e14509570eb51c8ea02eb3380c117c1b48</a>
+decrediton = <a href="https://github.com/decred/decrediton/commits/b2f1281b7e02205c87910ea485bb53dd5bb0c6ee">b2f1281b7e02205c87910ea485bb53dd5bb0c6ee</a>
 </pre>
 
