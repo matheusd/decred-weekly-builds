@@ -22,9 +22,6 @@ install:
   - go version
   - go env
   - go get -u github.com/golang/dep/cmd/dep
-  - git clone https://github.com/%GITHUB_DECRED_OWNER%/dcrd %GOPATH%/src/github.com/decred/dcrd
-  - git clone https://github.com/%GITHUB_DECRED_OWNER%/dcrwallet %GOPATH%/src/github.com/decred/dcrwallet
-  - git clone https://github.com/%GITHUB_DECRED_OWNER%/decrediton %GOPATH%/src/github.com/decred/decrediton
   - python before_install.py
   - cd %GOPATH%\\src\\github.com\\decred\\dcrd
   - dep ensure
