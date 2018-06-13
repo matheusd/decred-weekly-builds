@@ -17,7 +17,7 @@ def main():
     system("cd %(GOPATH)s/src/github.com/decred/dcrd && git checkout " + versions["shaDcrd"])
 
     print("Checking out %s/dcrwallet/%s ", (versions["dcrwRepoOwner"], versions["shaDcrwallet"]))
-    system("git clone https://github.com/%s/dcrwallet %%(GOPATH)s/src/github.com/decred/dcrd" % versions["dcrwRepoOwner"])
+    system("git clone https://github.com/%s/dcrwallet %%(GOPATH)s/src/github.com/decred/dcrwallet" % versions["dcrwRepoOwner"])
     system("cd %(GOPATH)s/src/github.com/decred/dcrwallet && git checkout " + versions["shaDcrwallet"])
 
     print("Checking out %s/decrediton/%s ", (versions["decreditonRepoOwner"], versions["shaDecrediton"]))
