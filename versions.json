@@ -2,9 +2,9 @@
   "BUILD_REPO_OWNER": "matheusd",
   "BUILD_REPO_REPO": "decred-weekly-builds",
   "DECRED_REPO_OWNER": "decred",
-  "shaDcrd": "750f274202fab302615b5afe8e3445c5f535632c",
-  "shaDcrwallet": "dcd630557eb3b0f1d62459d52628f38b22f44cb4",
-  "shaDecrediton": "53bdfac10e03a0e95af747fffd7bbea5cbf738ef",
-  "tagName": "v20180606124832",
-  "version": "20180606124832"
+  "shaDcrd": "a235b830a8de4519d3e631ad5e8be06a709ef020",
+  "shaDcrwallet": "65504e99da301e230949c1a1e1aa170613128f38",
+  "shaDecrediton": "51baead5b795354b31fc5953b67a76182afbef1c",
+  "tagName": "v20180613125056",
+  "version": "20180613125056"
 }
