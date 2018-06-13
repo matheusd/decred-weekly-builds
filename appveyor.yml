@@ -32,9 +32,9 @@ install:
   - dir %GOPATH%\\bin
   - cd ../decrediton
   - mkdir bin
-  - cp %GOPATH%\\bin\\dcrd.exe bin/
-  - cp %GOPATH%\\bin\\dcrctl.exe bin/
-  - cp %GOPATH%\\bin\\dcrwallet.exe bin/
+  - cp %GOPATH%\\bin\\dcrd.exe bin/dcrd64.exe
+  - cp %GOPATH%\\bin\\dcrctl.exe bin/dcrctl64.exe
+  - cp %GOPATH%\\bin\\dcrwallet.exe bin/dcrwallet64.exe
   - yarn
   - yarn package
   - dir %GOPATH%\\src\\github.com\\decred\\decrediton\\release\\
