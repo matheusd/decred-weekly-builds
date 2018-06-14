@@ -8,9 +8,9 @@
   "dcrwRepoOwner": "decred",
   "decreditonBranch": "animation-poc",
   "decreditonRepoOwner": "matheusd",
-  "shaDcrd": "a235b830a8de4519d3e631ad5e8be06a709ef020",
+  "shaDcrd": "ca7eeee6af72d69a73fe339b453c1ca20d211d04",
   "shaDcrwallet": "69603e2d6d62eefe34f94dc245fc8f8f9180a57c",
-  "shaDecrediton": "f43678056244ca09e3143518531a19bee2dce508",
-  "tagName": "v20180613211122",
-  "version": "20180613211122"
+  "shaDecrediton": "8167018c6c9dd21d5a7fbe9de51efbe02868f016",
+  "tagName": "v20180614143940",
+  "version": "20180614143940"
 }
