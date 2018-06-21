@@ -6,11 +6,11 @@
   "dcrdRepoOwner": "decred",
   "dcrwBranch": null,
   "dcrwRepoOwner": "decred",
-  "decreditonBranch": "animation-onboarding",
+  "decreditonBranch": "politeia",
   "decreditonRepoOwner": "matheusd",
   "shaDcrd": "b105a9ef49f87cb3b89f0165ecbb96c6655f7e5a",
   "shaDcrwallet": "69603e2d6d62eefe34f94dc245fc8f8f9180a57c",
-  "shaDecrediton": "52bd82d531f9d5f0d1a17286061af99a88c042da",
-  "tagName": "v20180620202759",
-  "version": "20180620202759"
+  "shaDecrediton": "f98d090dd4c02c18a68bc2b822f55bf817acc2e1",
+  "tagName": "v20180621140235",
+  "version": "20180621140235"
 }
