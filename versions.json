@@ -6,11 +6,11 @@
   "dcrdRepoOwner": "decred",
   "dcrwBranch": null,
   "dcrwRepoOwner": "decred",
-  "decreditonBranch": "politeia",
+  "decreditonBranch": "update-grpc-pkg",
   "decreditonRepoOwner": "matheusd",
-  "shaDcrd": "b105a9ef49f87cb3b89f0165ecbb96c6655f7e5a",
+  "shaDcrd": "d3731898e907ab34c5e45a6c9e83a02e307bca88",
   "shaDcrwallet": "69603e2d6d62eefe34f94dc245fc8f8f9180a57c",
-  "shaDecrediton": "f98d090dd4c02c18a68bc2b822f55bf817acc2e1",
-  "tagName": "v20180621140235",
-  "version": "20180621140235"
+  "shaDecrediton": "06e06cca14a6958f5a10b401f186d5fd126b677f",
+  "tagName": "v20180625123639",
+  "version": "20180625123639"
 }
