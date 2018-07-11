@@ -1,7 +1,7 @@
 
 # Decred Development Binaries
 
-[![Build Status](https://travis-ci.org/matheusd/decred-weekly-builds.svg?branch=v20180704125126)](https://travis-ci.org/matheusd/decred-weekly-builds) [![Build status](https://ci.appveyor.com/api/projects/status/hncgrnv0xuqb6s3c/branch/v20180704125126?svg=true)](https://ci.appveyor.com/project/matheusd/decred-weekly-builds/branch/v20180704125126)
+[![Build Status](https://travis-ci.org/matheusd/decred-weekly-builds.svg?branch=v20180711125208)](https://travis-ci.org/matheusd/decred-weekly-builds) [![Build status](https://ci.appveyor.com/api/projects/status/hncgrnv0xuqb6s3c/branch/v20180711125208?svg=true)](https://ci.appveyor.com/project/matheusd/decred-weekly-builds/branch/v20180711125208)
 
 
 **DO NOT USE IN PRODUCTION**
@@ -14,10 +14,10 @@ code. Do not use in production. You will not receive support for them.
 ## Version Information
 
 <pre>
-version id = <a href="https://github.com/matheusd/decred-weekly-builds/releases/tag/v20180704125126">20180704125126</a>
-      dcrd = <a href="https://github.com/decred/dcrd/commits/e0d9a354000c7572e8abdeec8f6230b2abb66ba1">e0d9a354000c7572e8abdeec8f6230b2abb66ba1</a>
- dcrwallet = <a href="https://github.com/decred/dcrwallet/commits/0e7aac68154525a1a07d2b5ba78429dbe736d530">0e7aac68154525a1a07d2b5ba78429dbe736d530</a>
-decrediton = <a href="https://github.com/decred/decrediton/commits/2639ada704935f251fc828d2de909e837fb1e1eb">2639ada704935f251fc828d2de909e837fb1e1eb</a>
+version id = <a href="https://github.com/matheusd/decred-weekly-builds/releases/tag/v20180711125208">20180711125208</a>
+      dcrd = <a href="https://github.com/decred/dcrd/commits/ddd66de60466b544ef7b41abe00ecd3f248b00d9">ddd66de60466b544ef7b41abe00ecd3f248b00d9</a>
+ dcrwallet = <a href="https://github.com/decred/dcrwallet/commits/260c25fe0702f77db1183b9eef625598d4effffd">260c25fe0702f77db1183b9eef625598d4effffd</a>
+decrediton = <a href="https://github.com/decred/decrediton/commits/695c31ab4d3ed8ba84b0c0e6ea24be50eab2ca41">695c31ab4d3ed8ba84b0c0e6ea24be50eab2ca41</a>
 </pre>
 
 ## Repository Information
