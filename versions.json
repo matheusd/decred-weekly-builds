@@ -8,9 +8,9 @@
   "dcrwRepoOwner": "decred",
   "decreditonBranch": "politeia",
   "decreditonRepoOwner": "matheusd",
-  "shaDcrd": "ddd66de60466b544ef7b41abe00ecd3f248b00d9",
-  "shaDcrwallet": "41900a8ee34c753f307087dfc477824a75191779",
-  "shaDecrediton": "c42e270a74cc6a5d182d2759b019892369030a9c",
-  "tagName": "v20180712174325",
-  "version": "20180712174325"
+  "shaDcrd": "60d7fe080fd26ce9a38242a755f4c27474102ccf",
+  "shaDcrwallet": "bc273bc09a14532606364436586f0f07ba65799e",
+  "shaDecrediton": "3dfb29cba62152d663a05199cd01a313173d4de0",
+  "tagName": "v20180717200851",
+  "version": "20180717200851"
 }
