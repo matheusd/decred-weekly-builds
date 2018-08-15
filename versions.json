@@ -6,11 +6,11 @@
   "dcrdRepoOwner": "decred",
   "dcrwBranch": null,
   "dcrwRepoOwner": "decred",
-  "decreditonBranch": "animation-profile",
-  "decreditonRepoOwner": "matheusd",
-  "shaDcrd": "f0e65ec62f916b4b8aaafca6906c67c34c242dac",
-  "shaDcrwallet": "640cbe14449e70dc5bd58b7d55049d1457cd5415",
-  "shaDecrediton": "c9d12a766bbc34cd74800d2fa436cb90ef8917bd",
-  "tagName": "v20180808173201",
-  "version": "20180808173201"
+  "decreditonBranch": null,
+  "decreditonRepoOwner": "decred",
+  "shaDcrd": "e4bdae9b0cc1c4e1cf2f03f0300a6ddafbf23e9d",
+  "shaDcrwallet": "ba118f0fc5cce6d8f50aee4de2e92be22464d25a",
+  "shaDecrediton": "791b6b42e53ce09e2ac3013a8d8d204f16b7ff64",
+  "tagName": "v20180815125410",
+  "version": "20180815125410"
 }
