@@ -3,7 +3,7 @@
 import json
 import os
 
-DST_ROOT = dstRoot = "%%(ROOT_BUILD)" % os.environ
+DST_ROOT = dstRoot = "%(ROOT_BUILD)s" % os.environ
 
 def system(cmd):
     res = os.system(cmd)
