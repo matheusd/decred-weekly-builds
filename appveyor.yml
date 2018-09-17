@@ -1,6 +1,6 @@
 version: 0.1.{build}
 
-#skip_non_tags: true
+skip_non_tags: true
 
 cache:
   - node_modules
