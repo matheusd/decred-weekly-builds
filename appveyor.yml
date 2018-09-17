@@ -26,10 +26,10 @@ install:
   - dir %ROOT_BUILD%\src
   - mkdir %ROOT_BUILD%\src\decrediton\bin
   - cd %ROOT_BUILD%\src\dcrd
-  - go build -v -o ..\decrediton\bin\dcrd64.exe .
-  - go build -v -o ..\decrediton\bin\dcrctl64.exe .\cmd\dcrctl
+  - go build -v -o ..\decrediton\bin\dcrd.exe .
+  - go build -v -o ..\decrediton\bin\dcrctl.exe .\cmd\dcrctl
   - cd ..\dcrwallet
-  - go build -v -o ..\decrediton\bin\dcrwallet64.exe .
+  - go build -v -o ..\decrediton\bin\dcrwallet.exe .
   - cd ..\decrediton
   - yarn
   - yarn package
