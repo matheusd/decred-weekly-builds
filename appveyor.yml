@@ -24,13 +24,13 @@ install:
   - mkdir %ROOT_BUILD%\src
   - python before_install.py
   - dir %ROOT_BUILD%\src
-  - cd %ROOT_BUILD%\src\decrediton
-  - mkdir bin
-  - cd bin
-  - go build -v -o dcrd64.exe %ROOT_BUILD%\src\dcrd
-  - go build -v -o dcrctl64.exe %ROOT_BUILD%\src\dcrd\\cmd\dcrctl
-  - go build -v -o dcrwallet64.exe %ROOT_BUILD%\src\dcrd\cmd\dcrwallet
-  - cd ..
+  - mkdir %ROOT_BUILD%\src\decrediton\bin
+  - cd %ROOT_BUILD%\src\dcrd
+  - go build -v -o ..\decrediton\bin\dcrd64.exe .
+  - go build -v -o ..\decrediton\bin\dcrctl64.exe .\cmd\dcrctl
+  - cd ..\dcrwallet
+  - go build -v -o ..\decrediton\bin\dcrwallet64.exe .
+  - cd ..\decrediton
   - yarn
   - yarn package
   - dir %ROOT_BUILD%\src\decrediton\release\
