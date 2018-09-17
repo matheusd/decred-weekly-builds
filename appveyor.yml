@@ -13,7 +13,7 @@ platform:
 
 init:
   - git config --global core.autocrlf input
-  - set PATH=%GOROOT%\bin;%HOME%\bin;%PATH%
+#  - set PATH=%GOROOT%\bin;%HOME%\bin;%PATH%
 
 install:
   - ps: Install-Product node 6 x64
@@ -21,22 +21,22 @@ install:
   - npm install npm -g
   - go version
   - go env
-  - mkdir %HOME%\src
+  - mkdir %ROOT_BUILD%\src
   - python before_install.py
-  - dir %HOME%\src
-  - cd %HOME%\src\decrediton
+  - dir %ROOT_BUILD%\src
+  - cd %ROOT_BUILD%\src\decrediton
   - mkdir bin
   - cd bin
-  - go build -v -o dcrd64.exe %HOME%\src\dcrd
-  - go build -v -o dcrctl64.exe %HOME%\src\dcrd\\cmd\dcrctl
-  - go build -v -o dcrwallet64.exe %HOME%\src\dcrd\cmd\dcrwallet
+  - go build -v -o dcrd64.exe %ROOT_BUILD%\src\dcrd
+  - go build -v -o dcrctl64.exe %ROOT_BUILD%\src\dcrd\\cmd\dcrctl
+  - go build -v -o dcrwallet64.exe %ROOT_BUILD%\src\dcrd\cmd\dcrwallet
   - cd ..
   - yarn
   - yarn package
-  - dir %HOME%\src\decrediton\release\
+  - dir %ROOT_BUILD%\src\decrediton\release\
   - mkdir %APPVEYOR_BUILD_FOLDER%\artifacts
-  - copy %HOME%\src\decrediton\release\*.exe %APPVEYOR_BUILD_FOLDER%\artifacts
-  - 7z a %APPVEYOR_BUILD_FOLDER%\artifacts\decrediton-win-%APPVEYOR_REPO_TAG_NAME%.zip %HOME%\src\decrediton\release\win-unpacked\*
+  - copy %ROOT_BUILD%\src\decrediton\release\*.exe %APPVEYOR_BUILD_FOLDER%\artifacts
+  - 7z a %APPVEYOR_BUILD_FOLDER%\artifacts\decrediton-win-%APPVEYOR_REPO_TAG_NAME%.zip %ROOT_BUILD%\src\decrediton\release\win-unpacked\*
 
 build_script:
   - echo "Hooray!"
