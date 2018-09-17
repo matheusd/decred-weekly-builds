@@ -22,6 +22,7 @@ install:
   - go version
   - go env
   - python before_install.py
+  - dir %HOME%\src
   - cd %HOME%\src\decrediton
   - mkdir bin
   - cd bin
