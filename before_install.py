@@ -6,7 +6,7 @@ import os
 DST_ROOT = dstRoot = "%%(HOME)" % os.environ
 
 def system(cmd):
-    res = os.system(cmd % os.environ)
+    res = os.system(cmd)
     if res != 0:
         raise Exception("Error on cmd %s" % cmd)
 
