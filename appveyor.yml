@@ -22,19 +22,19 @@ install:
   - go version
   - go env
   - python before_install.py
-  - cd %HOME%\\src\\decrediton
+  - cd %HOME%\src\decrediton
   - mkdir bin
   - cd bin
-  - go build -v -o dcrd64.exe %HOME%\\src\\dcrd
-  - go build -v -o dcrctl64.exe %HOME%\\src\\dcrd\\cmd\\dcrctl
-  - go build -v -o dcrwallet64.exe %HOME%\\src\\dcrd\\cmd\\dcrwallet
+  - go build -v -o dcrd64.exe %HOME%\src\dcrd
+  - go build -v -o dcrctl64.exe %HOME%\src\dcrd\\cmd\dcrctl
+  - go build -v -o dcrwallet64.exe %HOME%\src\dcrd\cmd\dcrwallet
   - cd ..
   - yarn
   - yarn package
-  - dir %HOME%\\src\\decrediton\\release\\
-  - mkdir %APPVEYOR_BUILD_FOLDER%\\artifacts
-  - copy %HOME%\\src\\decrediton\\release\\*.exe %APPVEYOR_BUILD_FOLDER%\\artifacts
-  - 7z a %APPVEYOR_BUILD_FOLDER%\\artifacts\\decrediton-win-%APPVEYOR_REPO_TAG_NAME%.zip %HOME%\\src\\decrediton\\release\\win-unpacked\\*
+  - dir %HOME%\src\decrediton\release\
+  - mkdir %APPVEYOR_BUILD_FOLDER%\artifacts
+  - copy %HOME%\src\decrediton\release\*.exe %APPVEYOR_BUILD_FOLDER%\artifacts
+  - 7z a %APPVEYOR_BUILD_FOLDER%\artifacts\decrediton-win-%APPVEYOR_REPO_TAG_NAME%.zip %HOME%\src\decrediton\release\win-unpacked\*
 
 build_script:
   - echo "Hooray!"
