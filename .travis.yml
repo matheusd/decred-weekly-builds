@@ -33,10 +33,11 @@ before_install:
   - (cd dcrd && go build -o ../decrediton/bin/dcrd -v .)
   - (cd dcrd && go build -o ../decrediton/bin/dcrctl -v ./cmd/dcrctl)
   - (cd dcrwallet && go build -o ../decrediton/bin/dcrwallet -v .)
+  - cd $TRAVIS_BUILD_DIR
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then (cd $HOME/src/decrediton && yarn && yarn package-dev-linux) ; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then (cd $HOME/src/decrediton && yarn && yarn package) ; fi
   - cp $HOME/src/decrediton/release/*.* $TRAVIS_BUILD_DIR
-  - (cd $TRAVIS_BUILD_DIR && echo $PWD && ls)
+  - (echo "Contents of $PWD" && ls)
 
 script:
   - echo "hooray!"
