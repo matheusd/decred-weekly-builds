@@ -3,29 +3,33 @@
 import json
 import os
 
+DST_ROOT = dstRoot = "%%(HOME)" % os.environ
+
 def system(cmd):
     res = os.system(cmd % os.environ)
     if res != 0:
         raise Exception("Error on cmd %s" % cmd)
 
+def destinationPath(path):
+    return "%s/src/%s" % (DST_ROOT, path)
+
+def cloneAndCheckout(repoOwner, repo, commit):
+    print("Checking out %s/%s/%s" % (repoOwner, repo, commit))
+    dst = destinationPath(repo)
+    repoURL = "https://github.com/%s/%s" % (repoOwner, repo)
+    system("git clone %s %s" % repoURL, dst)
+    system("cd %s && git checkout %s" % (dst, commit))
+
 def main():
     with open("versions.json") as f:
         versions = json.load(f)
 
-    print("Checking out %s/dcrd/%s" % (versions["dcrdRepoOwner"], versions["shaDcrd"]))
-    system("git clone https://github.com/%s/dcrd %%(GOPATH)s/src/github.com/decred/dcrd" % versions["dcrdRepoOwner"])
-    system("cd %(GOPATH)s/src/github.com/decred/dcrd && git checkout " + versions["shaDcrd"])
-
-    print("Checking out %s/dcrwallet/%s ", (versions["dcrwRepoOwner"], versions["shaDcrwallet"]))
-    system("git clone https://github.com/%s/dcrwallet %%(GOPATH)s/src/github.com/decred/dcrwallet" % versions["dcrwRepoOwner"])
-    system("cd %(GOPATH)s/src/github.com/decred/dcrwallet && git checkout " + versions["shaDcrwallet"])
-
-    print("Checking out %s/decrediton/%s ", (versions["decreditonRepoOwner"], versions["shaDecrediton"]))
-    system("git clone https://github.com/%s/decrediton %%(GOPATH)s/src/github.com/decred/decrediton" % versions["decreditonRepoOwner"])
-    system("cd %(GOPATH)s/src/github.com/decred/decrediton && git checkout " + versions["shaDecrediton"])
+    cloneAndCheckout(versions["dcrdRepoOwner"], "dcrd", versions["shaDcrd"]))
+    cloneAndCheckout(versions["dcrwRepoOwner"], "dcrwallet", versions["shaDcrwallet"]))
+    cloneAndCheckout(versions["decreditonRepoOwner"], "decrediton", versions["shaDecrediton"]))
 
     print("Fixing decrediton version")
-    decreditonPath = "%(GOPATH)s/src/github.com/decred/decrediton" % os.environ
+    decreditonPath = destinationPath("decrediton")
 
     for fname in ["/package.json", "/app/package.json"]:
         with open(decreditonPath + fname, "r") as f:

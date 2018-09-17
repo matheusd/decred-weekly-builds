@@ -13,7 +13,7 @@ platform:
 
 init:
   - git config --global core.autocrlf input
-  - set PATH=%GOROOT%\bin;%GOPATH%\bin;%PATH%
+  - set PATH=%GOROOT%\bin;%HOME%\bin;%PATH%
 
 install:
   - ps: Install-Product node 6 x64
@@ -21,26 +21,20 @@ install:
   - npm install npm -g
   - go version
   - go env
-  - go get -u github.com/golang/dep/cmd/dep
   - python before_install.py
-  - cd %GOPATH%\\src\\github.com\\decred\\dcrd
-  - dep ensure
-  - go install . ./cmd/dcrctl/
-  - cd ../dcrwallet
-  - dep ensure
-  - go install
-  - dir %GOPATH%\\bin
-  - cd ../decrediton
+  - cd %HOME%\\src\\decrediton
   - mkdir bin
-  - cp %GOPATH%\\bin\\dcrd.exe bin/dcrd64.exe
-  - cp %GOPATH%\\bin\\dcrctl.exe bin/dcrctl64.exe
-  - cp %GOPATH%\\bin\\dcrwallet.exe bin/dcrwallet64.exe
+  - cd bin
+  - go build -v -o dcrd64.exe %HOME%\\src\\dcrd
+  - go build -v -o dcrctl64.exe %HOME%\\src\\dcrd\\cmd\\dcrctl
+  - go build -v -o dcrwallet64.exe %HOME%\\src\\dcrd\\cmd\\dcrwallet
+  - cd ..
   - yarn
   - yarn package
-  - dir %GOPATH%\\src\\github.com\\decred\\decrediton\\release\\
+  - dir %HOME%\\src\\decrediton\\release\\
   - mkdir %APPVEYOR_BUILD_FOLDER%\\artifacts
-  - copy %GOPATH%\src\github.com\decred\decrediton\release\*.exe %APPVEYOR_BUILD_FOLDER%\artifacts
-  - 7z a %APPVEYOR_BUILD_FOLDER%\artifacts\decrediton-win-%APPVEYOR_REPO_TAG_NAME%.zip %GOPATH%\\src\\github.com\\decred\\decrediton\\release\\win-unpacked\\*
+  - copy %HOME%\\src\\decrediton\\release\\*.exe %APPVEYOR_BUILD_FOLDER%\\artifacts
+  - 7z a %APPVEYOR_BUILD_FOLDER%\\artifacts\\decrediton-win-%APPVEYOR_REPO_TAG_NAME%.zip %HOME%\\src\\decrediton\\release\\win-unpacked\\*
 
 build_script:
   - echo "Hooray!"
@@ -48,6 +42,7 @@ build_script:
 test: off
 
 environment:
+  HOME: c:\home
   GOPATH: c:\gopath
   GOROOT: C:\go
 
