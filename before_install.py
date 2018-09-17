@@ -3,7 +3,7 @@
 import json
 import os
 
-DST_ROOT = dstRoot = "%%(HOME)" % os.environ
+DST_ROOT = dstRoot = "%%(ROOT_BUILD)" % os.environ
 
 def system(cmd):
     res = os.system(cmd)
@@ -11,7 +11,8 @@ def system(cmd):
         raise Exception("Error on cmd %s" % cmd)
 
 def destinationPath(path):
-    print(os.environ)
+    for k in os.environ:
+        print("%s: %s", (k, os.environ[k]))
     return "%s/src/%s" % (DST_ROOT, path)
 
 def cloneAndCheckout(repoOwner, repo, commit):

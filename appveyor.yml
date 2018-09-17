@@ -42,7 +42,7 @@ build_script:
 test: off
 
 environment:
-  HOME: c:\home
+  ROOT_BUILD: c:\home
   GOPATH: c:\gopath
   GOROOT: C:\go
 
