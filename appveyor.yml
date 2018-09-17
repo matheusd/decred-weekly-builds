@@ -21,6 +21,7 @@ install:
   - npm install npm -g
   - go version
   - go env
+  - mkdir %HOME%\src
   - python before_install.py
   - dir %HOME%\src
   - cd %HOME%\src\decrediton
