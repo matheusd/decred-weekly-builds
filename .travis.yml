@@ -25,11 +25,12 @@ before_install:
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update       ; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install yarn ; fi # wine
   - ROOT_BUILD="$TRAVIS_HOME" python before_install.py
+  - ls $TRAVIS_HOME/src
   - cat $HOME/src/decrediton/package.json
   - mkdir $HOME/src/decrediton/bin
-  - (cd $HOME/src/decrediton/bin && go build -v github.com/decred/dcrd)
-  - (cd $HOME/src/decrediton/bin && go build -v github.com/decred/dcrd/cmd/dcrctl)
-  - (cd $HOME/src/decrediton/bin && go build -v github.com/decred/dcrwallet)
+  - (cd $HOME/src/decrediton/bin && go build -v $TRAVIS_HOME/src/dcrd)
+  - (cd $HOME/src/decrediton/bin && go build -v $TRAVIS_HOME/src/dcrd/cmd/dcrctl)
+  - (cd $HOME/src/decrediton/bin && go build -v $TRAVIS_HOME/src/dcrwallet)
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then (cd $HOME/src/decrediton && yarn && yarn package-dev-linux) ; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then (cd $HOME/src/decrediton && yarn && yarn package) ; fi
   - cp $HOME/src/decrediton/release/*.* $TRAVIS_BUILD_DIR

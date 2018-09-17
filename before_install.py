@@ -11,14 +11,11 @@ def system(cmd):
         raise Exception("Error on cmd %s" % cmd)
 
 def destinationPath(path):
-    for k in os.environ:
-        print("%s: %s", (k, os.environ[k]))
     return "%s/src/%s" % (DST_ROOT, path)
 
 def cloneAndCheckout(repoOwner, repo, commit):
     print("Checking out %s/%s/%s" % (repoOwner, repo, commit))
     dst = destinationPath(repo)
-    print(dst)
     repoURL = "https://github.com/%s/%s" % (repoOwner, repo)
     system("git clone %s %s" % (repoURL, dst))
     system("cd %s && git checkout %s" % (dst, commit))
