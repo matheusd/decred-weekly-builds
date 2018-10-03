@@ -1,7 +1,7 @@
 
 # Decred Development Binaries
 
-[![Build Status](https://travis-ci.org/matheusd/decred-weekly-builds.svg?branch=v20180926125708)](https://travis-ci.org/matheusd/decred-weekly-builds) [![Build status](https://ci.appveyor.com/api/projects/status/hncgrnv0xuqb6s3c/branch/v20180926125708?svg=true)](https://ci.appveyor.com/project/matheusd/decred-weekly-builds/branch/v20180926125708)
+[![Build Status](https://travis-ci.org/matheusd/decred-weekly-builds.svg?branch=v20181003125742)](https://travis-ci.org/matheusd/decred-weekly-builds) [![Build status](https://ci.appveyor.com/api/projects/status/hncgrnv0xuqb6s3c/branch/v20181003125742?svg=true)](https://ci.appveyor.com/project/matheusd/decred-weekly-builds/branch/v20181003125742)
 
 
 **DO NOT USE IN PRODUCTION**
@@ -25,10 +25,10 @@ files.
 ## Version Information
 
 <pre>
-version id = <a href="https://github.com/matheusd/decred-weekly-builds/releases/tag/v20180926125708">20180926125708</a>
-      dcrd = <a href="https://github.com/decred/dcrd/commits/ea8aa1ee5725a0a8c5827f75a02f4801da5d5a79">ea8aa1ee5725a0a8c5827f75a02f4801da5d5a79</a>
- dcrwallet = <a href="https://github.com/decred/dcrwallet/commits/62c568c72abc163f4aa44f3791a5345059083327">62c568c72abc163f4aa44f3791a5345059083327</a>
-decrediton = <a href="https://github.com/decred/decrediton/commits/2dbb4c747e5b0d737c5251a1137d6bdb5ef1daad">2dbb4c747e5b0d737c5251a1137d6bdb5ef1daad</a>
+version id = <a href="https://github.com/matheusd/decred-weekly-builds/releases/tag/v20181003125742">20181003125742</a>
+      dcrd = <a href="https://github.com/decred/dcrd/commits/979d21f6f3695f0081ccc0c55994ecdff39b5a27">979d21f6f3695f0081ccc0c55994ecdff39b5a27</a>
+ dcrwallet = <a href="https://github.com/decred/dcrwallet/commits/6f3a8e34e13a7deaca31c6bec9b995ad14ba5062">6f3a8e34e13a7deaca31c6bec9b995ad14ba5062</a>
+decrediton = <a href="https://github.com/decred/decrediton/commits/3e22d5f6fd69674f43f7277d1a08b273117f1340">3e22d5f6fd69674f43f7277d1a08b273117f1340</a>
 </pre>
 
 ## Repository Information
