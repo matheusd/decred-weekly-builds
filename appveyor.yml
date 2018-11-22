@@ -16,7 +16,7 @@ init:
 #  - set PATH=%GOROOT%\bin;%HOME%\bin;%PATH%
 
 install:
-  - ps: Install-Product node 6 x64
+  - ps: Install-Product node 10.2 x64
   - git reset --hard HEAD
   - npm install npm -g
   - go version
