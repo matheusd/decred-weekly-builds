@@ -1,7 +1,7 @@
 
 # Decred Development Binaries
 
-[![Build Status](https://travis-ci.org/matheusd/decred-weekly-builds.svg?branch=v20191119202214)](https://travis-ci.org/matheusd/decred-weekly-builds) [![Build status](https://ci.appveyor.com/api/projects/status/hncgrnv0xuqb6s3c/branch/master?svg=true)](https://ci.appveyor.com/project/matheusd/decred-weekly-builds/branch/master)
+[![Build Status](https://travis-ci.org/matheusd/decred-weekly-builds.svg?branch=v20191120133129)](https://travis-ci.org/matheusd/decred-weekly-builds) [![Build status](https://ci.appveyor.com/api/projects/status/hncgrnv0xuqb6s3c/branch/master?svg=true)](https://ci.appveyor.com/project/matheusd/decred-weekly-builds/branch/master)
 
 
 **DO NOT USE IN PRODUCTION**
@@ -25,16 +25,16 @@ files.
 ## Version Information
 
 <pre>
-version id = <a href="https://github.com/matheusd/decred-weekly-builds/releases/tag/v20191119202214">20191119202214</a>
-      dcrd = <a href="https://github.com/decred/dcrd/commits/f3057bd57b2d212943ffe291a30ecabcdc242989">f3057bd57b2d212943ffe291a30ecabcdc242989</a>
+version id = <a href="https://github.com/matheusd/decred-weekly-builds/releases/tag/v20191120133129">20191120133129</a>
+      dcrd = <a href="https://github.com/decred/dcrd/commits/341ee7f34541763810b385ba102b2fe0e9fa57f6">341ee7f34541763810b385ba102b2fe0e9fa57f6</a>
  dcrwallet = <a href="https://github.com/decred/dcrwallet/commits/1fb7aff5a03f3235178111cace5dffdd07f9b26c">1fb7aff5a03f3235178111cace5dffdd07f9b26c</a>
-decrediton = <a href="https://github.com/vctt94/decrediton/commits/66bc32199b2f1ac82e9f688f216f7dbc2f49eb68">66bc32199b2f1ac82e9f688f216f7dbc2f49eb68</a>
+decrediton = <a href="https://github.com/decred/decrediton/commits/f877c76d1c4dba4fafc3d4989d2f9bdae454bdd3">f877c76d1c4dba4fafc3d4989d2f9bdae454bdd3</a>
 </pre>
 
 ## Repository Information
 
 - **dcrd** = [decred/None](https://github.com/decred/dcrd)
 - **dcrwallet** = [decred/None](https://github.com/decred/dcrwallet)
-- **decrediton** = [vctt94/fixIcon](https://github.com/vctt94/decrediton)
+- **decrediton** = [decred/None](https://github.com/decred/decrediton)
 
 
