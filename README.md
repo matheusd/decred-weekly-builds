@@ -1,7 +1,7 @@
 
 # Decred Development Binaries
 
-[![Build Status](https://travis-ci.org/matheusd/decred-weekly-builds.svg?branch=v20191120133129)](https://travis-ci.org/matheusd/decred-weekly-builds) [![Build status](https://ci.appveyor.com/api/projects/status/hncgrnv0xuqb6s3c/branch/master?svg=true)](https://ci.appveyor.com/project/matheusd/decred-weekly-builds/branch/master)
+[![Build Status](https://travis-ci.org/matheusd/decred-weekly-builds.svg?branch=v20191122143133)](https://travis-ci.org/matheusd/decred-weekly-builds) [![Build status](https://ci.appveyor.com/api/projects/status/hncgrnv0xuqb6s3c/branch/master?svg=true)](https://ci.appveyor.com/project/matheusd/decred-weekly-builds/branch/master)
 
 
 **DO NOT USE IN PRODUCTION**
@@ -25,16 +25,16 @@ files.
 ## Version Information
 
 <pre>
-version id = <a href="https://github.com/matheusd/decred-weekly-builds/releases/tag/v20191120133129">20191120133129</a>
-      dcrd = <a href="https://github.com/decred/dcrd/commits/341ee7f34541763810b385ba102b2fe0e9fa57f6">341ee7f34541763810b385ba102b2fe0e9fa57f6</a>
+version id = <a href="https://github.com/matheusd/decred-weekly-builds/releases/tag/v20191122143133">20191122143133</a>
+      dcrd = <a href="https://github.com/decred/dcrd/commits/4971faff252f3985ef3a756e111c089c31287c0d">4971faff252f3985ef3a756e111c089c31287c0d</a>
  dcrwallet = <a href="https://github.com/decred/dcrwallet/commits/1fb7aff5a03f3235178111cace5dffdd07f9b26c">1fb7aff5a03f3235178111cace5dffdd07f9b26c</a>
-decrediton = <a href="https://github.com/decred/decrediton/commits/f877c76d1c4dba4fafc3d4989d2f9bdae454bdd3">f877c76d1c4dba4fafc3d4989d2f9bdae454bdd3</a>
+decrediton = <a href="https://github.com/vctt94/decrediton/commits/1272b58671749c28611af4c9c7b1188658029136">1272b58671749c28611af4c9c7b1188658029136</a>
 </pre>
 
 ## Repository Information
 
 - **dcrd** = [decred/None](https://github.com/decred/dcrd)
 - **dcrwallet** = [decred/None](https://github.com/decred/dcrwallet)
-- **decrediton** = [decred/None](https://github.com/decred/decrediton)
+- **decrediton** = [vctt94/fixIcon](https://github.com/vctt94/decrediton)
 
 
