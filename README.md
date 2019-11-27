@@ -1,7 +1,7 @@
 
 # Decred Development Binaries
 
-[![Build Status](https://travis-ci.org/matheusd/decred-weekly-builds.svg?branch=v20191122143133)](https://travis-ci.org/matheusd/decred-weekly-builds) [![Build status](https://ci.appveyor.com/api/projects/status/hncgrnv0xuqb6s3c/branch/master?svg=true)](https://ci.appveyor.com/project/matheusd/decred-weekly-builds/branch/master)
+[![Build Status](https://travis-ci.org/matheusd/decred-weekly-builds.svg?branch=v20191127132954)](https://travis-ci.org/matheusd/decred-weekly-builds) [![Build status](https://ci.appveyor.com/api/projects/status/hncgrnv0xuqb6s3c/branch/master?svg=true)](https://ci.appveyor.com/project/matheusd/decred-weekly-builds/branch/master)
 
 
 **DO NOT USE IN PRODUCTION**
@@ -25,16 +25,16 @@ files.
 ## Version Information
 
 <pre>
-version id = <a href="https://github.com/matheusd/decred-weekly-builds/releases/tag/v20191122143133">20191122143133</a>
-      dcrd = <a href="https://github.com/decred/dcrd/commits/4971faff252f3985ef3a756e111c089c31287c0d">4971faff252f3985ef3a756e111c089c31287c0d</a>
- dcrwallet = <a href="https://github.com/decred/dcrwallet/commits/1fb7aff5a03f3235178111cace5dffdd07f9b26c">1fb7aff5a03f3235178111cace5dffdd07f9b26c</a>
-decrediton = <a href="https://github.com/vctt94/decrediton/commits/1272b58671749c28611af4c9c7b1188658029136">1272b58671749c28611af4c9c7b1188658029136</a>
+version id = <a href="https://github.com/matheusd/decred-weekly-builds/releases/tag/v20191127132954">20191127132954</a>
+      dcrd = <a href="https://github.com/decred/dcrd/commits/b50cadcb136c02c5f4d1136db0c08ff15b060b17">b50cadcb136c02c5f4d1136db0c08ff15b060b17</a>
+ dcrwallet = <a href="https://github.com/decred/dcrwallet/commits/f9f3362abf06418a419425a9abcfbc0ae6b2caaf">f9f3362abf06418a419425a9abcfbc0ae6b2caaf</a>
+decrediton = <a href="https://github.com/decred/decrediton/commits/43ab7679d7d3be85d347b9a35271d3ed3b3be177">43ab7679d7d3be85d347b9a35271d3ed3b3be177</a>
 </pre>
 
 ## Repository Information
 
 - **dcrd** = [decred/None](https://github.com/decred/dcrd)
 - **dcrwallet** = [decred/None](https://github.com/decred/dcrwallet)
-- **decrediton** = [vctt94/fixIcon](https://github.com/vctt94/decrediton)
+- **decrediton** = [decred/None](https://github.com/decred/decrediton)
 
 
