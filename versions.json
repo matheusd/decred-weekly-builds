@@ -8,9 +8,9 @@
   "dcrwRepoOwner": "decred",
   "decreditonBranch": null,
   "decreditonRepoOwner": "decred",
-  "shaDcrd": "b9411d5383ac4379b396c4bbea9dd587ed989820",
-  "shaDcrwallet": "974c62ae31b085ae592d16aa5d25b860991a146e",
-  "shaDecrediton": "82559eb051d7a34b7e3649fbeb70e72806ef64a9",
-  "tagName": "v20200708134753",
-  "version": "20200708134753"
+  "shaDcrd": "fddd629fe062a8b028781665a731e36606589455",
+  "shaDcrwallet": "c38f5a9343cdbf236616ed5dc282cea9b7a5bd68",
+  "shaDecrediton": "b1d7f990d01da5d7f5a71b0d1654c34db75f4d1d",
+  "tagName": "v20200715134822",
+  "version": "20200715134822"
 }
