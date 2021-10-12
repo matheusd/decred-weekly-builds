@@ -15,6 +15,11 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 14.x
+
+    - name: Set up Go
+      uses: actions/setup-go@v2
+      with:
+        go-version: ^1.17
     
     - name: Initialize python
       uses: actions/setup-python@v1
@@ -25,10 +30,17 @@ jobs:
       shell: bash
       run: ROOT_BUILD="$PWD" python before_install.py    
 
+    - name: Build go artifacts
+      shell: bash
+      run: |
+        (cd src/dcrd && go build -o ../decrediton/bin/dcrd -v .)
+        (cd src/dcrwallet && go build -o ../decrediton/bin/dcrwallet -v .)
+
     - name: XXXX test
       shell: bash
       run: |
         echo "dir $PWD"
-        ls
+        ls src
+        ls src/decrediton/bin
 
 
