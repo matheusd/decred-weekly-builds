@@ -36,15 +36,9 @@ jobs:
         (cd src/dcrd && go build -o ../decrediton/bin/dcrd -v .)
         (cd src/dcrwallet && go build -o ../decrediton/bin/dcrwallet -v .)
 
-    - name: XXXX test
-      shell: bash
-      run: |
-        echo "dir $PWD"
-        ls src/decrediton/bin
-
     - name: Install dependencies
       shell: bash
-      run: (cd src && yarn)
+      run: (cd src/decrediton && yarn)
 
     - name: Package release
       if: ${{ matrix.os == 'linux' }}
@@ -55,3 +49,8 @@ jobs:
       shell: bash
       run: (cd src/decrediton && yarn package )
       
+    - name: XXXX test
+      shell: bash
+      run: |
+        echo "dir $PWD"
+        ls src/decrediton/release
