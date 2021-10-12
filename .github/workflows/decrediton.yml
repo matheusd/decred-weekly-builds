@@ -22,8 +22,13 @@ jobs:
         python-version: 3.7
 
     - name: Run prepare script
+      shell: bash
       run: ROOT_BUILD="$PWD" python before_install.py    
 
     - name: XXXX test
-      run: ls
+      shell: bash
+      run: |
+        echo "dir $PWD"
+        ls
+
 
