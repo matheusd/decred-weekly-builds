@@ -6,7 +6,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest]
+        os: [ubuntu-latest, windows-latest, macos-latest]
 
     steps:
     - uses: actions/checkout@v2
@@ -40,16 +40,7 @@ jobs:
       shell: bash
       run: (cd src/decrediton && yarn)
 
-    - name: Build
-      shell: bash
-      run: (cd src/decrediton && yarn build)
-
     - name: Package release
-      if: ${{ matrix.os == 'linux' }}
-      shell: bash
-      run: (cd src/decrediton && yarn package-dev-linux )
-    - name: Package release
-      if: ${{ matrix.os != 'linux' }}
       shell: bash
       run: (cd src/decrediton && yarn package )
       
