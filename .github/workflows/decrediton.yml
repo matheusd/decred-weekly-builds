@@ -22,7 +22,7 @@ jobs:
         python-version: 3.7
 
     - name: Run prepare script
-      run: python before_install.py    
+      run: ROOT_BUILD="$PWD" python before_install.py    
 
     - name: XXXX test
       run: ls

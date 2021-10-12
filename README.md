@@ -1,7 +1,7 @@
 
 # Decred Development Binaries
 
-[![Build Status](https://travis-ci.org/matheusd/decred-weekly-builds.svg?branch=v20191009132708)](https://travis-ci.org/matheusd/decred-weekly-builds) [![Build status](https://ci.appveyor.com/api/projects/status/hncgrnv0xuqb6s3c/branch/master?svg=true)](https://ci.appveyor.com/project/matheusd/decred-weekly-builds/branch/master)
+![build status](https://github.com/matheusd/decred-weekly-builds/actions/workflows/decrediton/badge.svg)
 
 
 **DO NOT USE IN PRODUCTION**
