@@ -40,7 +40,18 @@ jobs:
       shell: bash
       run: |
         echo "dir $PWD"
-        ls src
         ls src/decrediton/bin
 
+    - name: Install dependencies
+      shell: bash
+      run: (cd src && yarn)
 
+    - name: Package release
+      if: ${{ matrix.os == 'linux' }}
+      shell: bash
+      run: (cd src/decrediton && yarn package-dev-linux )
+    - name: Package release
+      if: ${{ matrix.os != 'linux' }}
+      shell: bash
+      run: (cd src/decrediton && yarn package )
+      
