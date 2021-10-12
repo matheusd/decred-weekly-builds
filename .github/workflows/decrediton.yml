@@ -1,0 +1,29 @@
+name: Build
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Use nodejs 14.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14.x
+    
+    - name: Initialize python
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7
+
+    - name: Run prepare script
+      run: python before_install.py    
+
+    - name: XXXX test
+      run: ls
+
