@@ -43,9 +43,22 @@ jobs:
     - name: Package release
       shell: bash
       run: (cd src/decrediton && yarn package )
-      
+
     - name: XXXX test
       shell: bash
       run: |
         echo "dir $PWD"
         ls src/decrediton/release
+
+    - name: Upload artifacts
+      uses: softprops/action-gh-release@v1
+      with:
+        files: |
+          - src/decrediton/release/*.AppImage
+          - src/decrediton/release/*.deb
+          - src/decrediton/release/*.rpm
+          - src/decrediton/release/*.tar.gz
+          - src/decrediton/release/*.exe
+          - src/decrediton/release/*.deb
+          - src/decrediton/release/*.dmg
+
