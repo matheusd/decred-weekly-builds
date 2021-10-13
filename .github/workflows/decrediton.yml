@@ -36,9 +36,22 @@ jobs:
         (cd src/dcrd && go build -o ../decrediton/bin/dcrd -v .)
         (cd src/dcrwallet && go build -o ../decrediton/bin/dcrwallet -v .)
 
+    - name: Get yarn cache dir
+      id: yarn-cache-dir-path
+      shell: bash
+      run: echo "::set-output name=dir::$(yarn cache dir)"
+
+    - name: Setup to use yarn cache dir
+      id: yarn-cache
+      with:
+        path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-yarn-
+
     - name: Install dependencies
       shell: bash
-      run: (cd src/decrediton && yarn)
+      run: (cd src/decrediton && yarn --prefer-offline)
 
     - name: Package release
       shell: bash

@@ -1,7 +1,7 @@
 
 # Decred Development Binaries
 
-![build status](https://github.com/matheusd/decred-weekly-builds/actions/workflows/decrediton/badge.svg)
+![build status](https://github.com/matheusd/decred-weekly-builds/actions/workflows/decrediton.yml/badge.svg)
 
 
 **DO NOT USE IN PRODUCTION**
