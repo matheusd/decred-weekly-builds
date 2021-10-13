@@ -9,12 +9,17 @@ jobs:
         os: [ubuntu-latest, windows-latest, macos-latest]
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2    
     
     - name: Use nodejs 14.x
       uses: actions/setup-node@v1
       with:
         node-version: 14.x
+
+    - name: XXXX test2
+      shell: bash
+      run: yarn --version
+    
 
     - name: Set up Go
       uses: actions/setup-go@v2
