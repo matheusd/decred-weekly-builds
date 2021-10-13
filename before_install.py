@@ -25,7 +25,9 @@ def main():
         versions = json.load(f)
 
     cloneAndCheckout(versions["dcrdRepoOwner"], "dcrd", versions["shaDcrd"])
+    cloneAndCheckout(versions["dcrctlRepoOwner"], "dcrctl", versions["shaDcrctl"])
     cloneAndCheckout(versions["dcrwRepoOwner"], "dcrwallet", versions["shaDcrwallet"])
+    cloneAndCheckout(versions["dcrlndRepoOwner"], "dcrlnd", versions["shaDcrlnd"])
     cloneAndCheckout(versions["decreditonRepoOwner"], "decrediton", versions["shaDecrediton"])
 
     print("Fixing decrediton version")

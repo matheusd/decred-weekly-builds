@@ -1,5 +1,8 @@
 name: Build
-on: [push, pull_request]
+on: 
+  push:
+    branches:
+      - refs/tags
 
 jobs:
   build:
@@ -34,7 +37,9 @@ jobs:
       shell: bash
       run: |
         (cd src/dcrd && go build -o ../decrediton/bin/dcrd -v .)
+        (cd src/dcrctl && go build -o ../decrediton/bin/dcrctl -v .)
         (cd src/dcrwallet && go build -o ../decrediton/bin/dcrwallet -v .)
+        (cd src/dcrlnd && go build -o ../decrediton/bin/dcrlnd -v ./cmd/dcrlnd)
 
     - name: Get yarn cache dir
       id: yarn-cache-dir-path
@@ -68,11 +73,15 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         files: |
-          - src/decrediton/release/*.AppImage
-          - src/decrediton/release/*.deb
-          - src/decrediton/release/*.rpm
-          - src/decrediton/release/*.tar.gz
-          - src/decrediton/release/*.exe
-          - src/decrediton/release/*.deb
-          - src/decrediton/release/*.dmg
+          src/decrediton/release/*.AppImage
+          src/decrediton/release/*.deb
+          src/decrediton/release/*.rpm
+          src/decrediton/release/*.tar.gz
+          src/decrediton/release/*.exe
+          src/decrediton/release/*.deb
+          src/decrediton/release/*.dmg
+
+    - name: Remove older releases
+      uses: dev-drprasad/delete-older-releases@v0.2.0
+      keep_latest: 5
 
