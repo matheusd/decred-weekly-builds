@@ -75,5 +75,4 @@ jobs:
           src/decrediton/release/*.rpm
           src/decrediton/release/*.tar.gz
           src/decrediton/release/*.exe
-          src/decrediton/release/*.deb
           src/decrediton/release/*.dmg
