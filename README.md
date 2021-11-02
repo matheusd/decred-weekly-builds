@@ -25,12 +25,12 @@ files.
 ## Version Information
 
 <pre>
-version id = <a href="https://github.com/matheusd/decred-weekly-builds/releases/tag/v20211013150209">20211013150209</a>
-      dcrd = <a href="https://github.com/decred/dcrd/commits/6f4158262aab82618cb83a643d6f144213df316d">6f4158262aab82618cb83a643d6f144213df316d</a>
+version id = <a href="https://github.com/matheusd/decred-weekly-builds/releases/tag/v20211102125953">20211102125953</a>
+      dcrd = <a href="https://github.com/decred/dcrd/commits/7368e0d79182c3afa0d7af08451a97b116b877d6">7368e0d79182c3afa0d7af08451a97b116b877d6</a>
     dcrctl = <a href="https://github.com/decred/dcrctl/commits/fd91a2c4fd06e0237813256837b34d2ff63e07ea">fd91a2c4fd06e0237813256837b34d2ff63e07ea</a>
- dcrwallet = <a href="https://github.com/decred/dcrwallet/commits/61ab76379a26ca850c8f5d8d756a0799d86e5761">61ab76379a26ca850c8f5d8d756a0799d86e5761</a>
-    dcrlnd = <a href="https://github.com/decred/dcrlnd/commits/b4028f4df876e4e434bfcd24be536265a4b6cb2f">b4028f4df876e4e434bfcd24be536265a4b6cb2f</a>
-decrediton = <a href="https://github.com/matheusd/decrediton/commits/b693e21233f09f4d78a2b3dbbf5544082daf5c47">b693e21233f09f4d78a2b3dbbf5544082daf5c47</a>
+ dcrwallet = <a href="https://github.com/decred/dcrwallet/commits/305bed7bace07539de610cc4d2f340b4fb0d699d">305bed7bace07539de610cc4d2f340b4fb0d699d</a>
+    dcrlnd = <a href="https://github.com/decred/dcrlnd/commits/c591214188c0b77239d83d98a4ca7b46270badc3">c591214188c0b77239d83d98a4ca7b46270badc3</a>
+decrediton = <a href="https://github.com/decred/decrediton/commits/fa9030e3c9e35036ae9102a16554d486652f7a0e">fa9030e3c9e35036ae9102a16554d486652f7a0e</a>
 </pre>
 
 ## Repository Information
@@ -39,6 +39,6 @@ decrediton = <a href="https://github.com/matheusd/decrediton/commits/b693e21233f
 - **dcrctl** = [decred/None](https://github.com/decred/dcrctl)
 - **dcrwallet** = [decred/None](https://github.com/decred/dcrwallet)
 - **dcrlnd** = [decred/None](https://github.com/decred/dcrlnd)
-- **decrediton** = [matheusd/community-i18n](https://github.com/matheusd/decrediton)
+- **decrediton** = [decred/None](https://github.com/decred/decrediton)
 
 
