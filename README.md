@@ -25,12 +25,12 @@ files.
 ## Version Information
 
 <pre>
-version id = <a href="https://github.com/matheusd/decred-weekly-builds/releases/tag/v20211114153712">20211114153712</a>
-      dcrd = <a href="https://github.com/decred/dcrd/commits/ac76e08adfae210682095cffffec58fc90419b6f">ac76e08adfae210682095cffffec58fc90419b6f</a>
+version id = <a href="https://github.com/matheusd/decred-weekly-builds/releases/tag/v20211121153719">20211121153719</a>
+      dcrd = <a href="https://github.com/decred/dcrd/commits/81ae286f23475265a5a9461ff147088584923e45">81ae286f23475265a5a9461ff147088584923e45</a>
     dcrctl = <a href="https://github.com/decred/dcrctl/commits/fd91a2c4fd06e0237813256837b34d2ff63e07ea">fd91a2c4fd06e0237813256837b34d2ff63e07ea</a>
  dcrwallet = <a href="https://github.com/decred/dcrwallet/commits/21dbaf4b7c83da87af0338e9ce81f8ddfc6549e2">21dbaf4b7c83da87af0338e9ce81f8ddfc6549e2</a>
     dcrlnd = <a href="https://github.com/decred/dcrlnd/commits/c591214188c0b77239d83d98a4ca7b46270badc3">c591214188c0b77239d83d98a4ca7b46270badc3</a>
-decrediton = <a href="https://github.com/decred/decrediton/commits/2eb220d9754e3e9a4d106cc6654a89f2f9b8b7fc">2eb220d9754e3e9a4d106cc6654a89f2f9b8b7fc</a>
+decrediton = <a href="https://github.com/decred/decrediton/commits/7faa797a13bf041ce9f955c19b539937b92f7565">7faa797a13bf041ce9f955c19b539937b92f7565</a>
 </pre>
 
 ## Repository Information
