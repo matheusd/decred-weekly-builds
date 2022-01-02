@@ -13,10 +13,10 @@
   "decreditonBranch": null,
   "decreditonRepoOwner": "decred",
   "shaDcrctl": "a72479e8c791aa91ced40955c902f156304db540",
-  "shaDcrd": "64aabc0283e9c9d2b0e548b754417b66e3c23629",
+  "shaDcrd": "2e8abf6bf3840cfd6fa54b3c5a814678a3f1a508",
   "shaDcrlnd": "05744a6f128770a0b95fe4640807cd397ab8f7a7",
   "shaDcrwallet": "a715abb518ca80988a3891cf7243df29db0dbc03",
   "shaDecrediton": "bd6cdd70a585423bdc82573b3b2a01daaafd8e72",
-  "tagName": "v20211226153808",
-  "version": "20211226153808"
+  "tagName": "v20220102153825",
+  "version": "20220102153825"
 }
